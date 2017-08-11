@@ -1,3 +1,6 @@
+#checkOutDisplay{
+  display: none;
+}
 #header{
   background-color: #f4f2f2;
   text-align: center;
@@ -6,7 +9,7 @@
   text-decoration: underline;
   height: auto;
 }
-#submitButton{
+#detailsSubmitButton{
   padding: 10px;
 text-align: center;
 }
@@ -16,10 +19,16 @@ h1{
 h3{
   margin-top: auto;
 }
+h5{
+  text-decoration: underline;
+}
 #market{
   padding:27px;
 }
 
 #clientName{
   border-right: black solid 1px;
+}
+#customeritems{
+  border-left: black solid 1px;
 }
