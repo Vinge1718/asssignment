@@ -1,6 +1,10 @@
 #customerDetails, #customerItems{
   display: none;
 }
+#signOut{
+  text-align: center;
+  font-style: oblique;
+}
 #header{
   background-color: #f4f2f2;
   text-align: center;
