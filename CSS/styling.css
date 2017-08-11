@@ -1,0 +1,12 @@
+#header{
+  background-color: #f4f2f2;
+  text-align: center;
+  color: #472e2e;
+  font-weight: bold;
+  text-decoration: underline;
+  height: auto;
+  position: fixed;
+}
+#market{
+  padding:27px;
+}
