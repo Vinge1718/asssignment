@@ -17,6 +17,7 @@ $(document).ready(function(){
   });
 
   $("button#checkOutButton").click(function(event){
+
     var selected = [];
     $("input:checkbox[name=itemsForSale]:checked").each(function(){
       selected.push($(this).val());
@@ -25,6 +26,9 @@ $(document).ready(function(){
     for (var i = 0; i <selected.length; i++){
       purchase.append("<li>" + selected[i] + "</li>");
     }
+    var dates = new Date();
+    var dated = dates.toUTCString();
+    $("#dated").text(dated);
     event.preventDefault();
     $("#customerItems").show();
   });
