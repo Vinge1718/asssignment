@@ -5,6 +5,10 @@ $(document).ready(function(){
     var shippingAddress = $("#shippingAddress").val();
     var gender = $("input:radio[name=gender]:checked").val();
     var contact = $("input#emailAddress").val();
+
+    var customerDetailsList = $("#detailsList");
+
+
     event.preventDefault();
   });
 });
