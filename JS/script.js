@@ -21,7 +21,10 @@ $(document).ready(function(){
     $("input:checkbox[name=itemsForSale]:checked").each(function(){
       selected.push($(this).val());
     });
-
+    var purchase = $("ul#itemsList");
+    for (var i = 0; i <selected.length; i++){
+      purchase.append("<li>" + selected[i] + "</li>");
+    }
     event.preventDefault();
     $("#customerItems").show();
   });
