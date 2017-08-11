@@ -6,9 +6,13 @@ $(document).ready(function(){
     var gender = $("input:radio[name=gender]:checked").val();
     var contact = $("input#emailAddress").val();
 
-    var customerDetailsList = $("#detailsList");
-
+    $("li.firstName").text(firstName);
+    $("li.secondName").text(secondName);
+    $("li.shippingAddress").text(shippingAddress);
+    $("li.gender").text(gender);
+    $("li.emailAddress").text(contact);
 
     event.preventDefault();
+    $("#customerDetails").show();
   });
 });

@@ -11,11 +11,11 @@
   <body>
 
     <div class="container">
-<!---->
+<!--site Header-->
       <div id="header">
         <h1 id="market">Market Place</h1>
       </div>
-
+<!--Customer details collection area-->
       <div id="wrapper">
         <hr><h4>Enter your details in the forms below:</h4><hr>
 
@@ -32,17 +32,18 @@
             </div>
             <div class="form-group">
               <label for="address"> Shipping Address</label>
-              <input type="text" class="form-control" id="address" value="...(00w 00th Street New York, NY 00000)">
+              <input type="text" class="form-control" id="shippingAddress" value="...(00w 00th Street New York, NY 00000)">
             </div>
 
           </form>
 
         </div>
+<!--Secon Collumn of customer details-->
         <div id="shoppingItems" class="col-md-6">
 
           <p>Gender:</p><hr>
 
-  <!--Gender Selection Form-->
+<!--Gender Selection Form-->
 
           <form id="genderForm">
             <label for="Gender">Select</label>
@@ -75,10 +76,8 @@
 
 <!--Submit Butoon location-->
 
-
-
     </div>
-    <div id="submitButton" class="container">
+    <div id="detailsSubmitButton" class="container">
       <button type="submit" class="btn"> Submit</button>
     </div>
 <!--Items for Sale-->
@@ -94,27 +93,45 @@
                 filters and consumables.
             </label>
           </div>
-<!--secpnd checkbox-->
+<!--second checkbox-->
           <div class="checkbox">
             <label>
               <input type="checkbox" name="itemsForSale" value="Electronic Repair Parts">
                 Communication lines, Control Modules.
             </label>
           </div>
-<!--Thied checkbox-->
+<!--Third checkbox-->
           <div class="checkbox">
             <label>
               <input type="checkbox" name="itemsForSale" value="Mechanical Repair Parts">
                 Suspension parts, mountings and Bushes.
             </label>
           </div>
-
+          <button type="submit" class="btn" id="checkOut-btn"> Check Out</button>
         </div><hr>
+
       </form>
+
     </div>
-    <div id="checkOut" class="container">
-      <h3>Check Out</h3>
-      <div></div>
+
+<!--Output field-->
+    <div id="checkOutDisplay" class="container" class="row">
+
+      <div class="col-md-6" id="customerDetails">
+        <h5>Details</h5><br>
+        <ul id="detailsList">
+          <li class="firstName"></li>
+          <li class="secondName"></li>
+          <li class="shippingAddress"></li>
+          <li class="gender"></li>
+          <li class="emailAddress"></li>
+        </ul>
+      </div>
+
+      <div class="col-md-6" id="customeritems">
+        <h5>My items</h5><br>
+        <ul id="itemsList"></ul>
+      </div>
     </div>
 
   </body>
