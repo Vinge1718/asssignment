@@ -5,8 +5,17 @@
   font-weight: bold;
   text-decoration: underline;
   height: auto;
-  position: fixed;
+
 }
+
 #market{
   padding:27px;
+}
+
+#clientName{
+  border-right: black solid 1px;
+}
+
+#itemsForSale{
+  margin-top: 33px;
 }
