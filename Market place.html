@@ -11,14 +11,14 @@
   <body>
 
     <div class="container">
-
+<!---->
       <div id="header">
         <h1 id="market">Market Place</h1>
       </div>
 
       <div id="wrapper">
         <hr><h4>Enter your details in the forms below:</h4><hr>
-        <p>Personal Details:</p>
+
         <div id="clientName" class="col-md-6">
           <p>Personal Details:</p><hr>
           <form id="name">
@@ -31,10 +31,10 @@
               <input type="text" class="form-control" id="secondName">
             </div>
             <div class="form-group">
-              <label for="address"> Enter Your Address</label>
-              <input type="text" class="form-control" id="address">
+              <label for="address"> Shipping Address</label>
+              <input type="text" class="form-control" id="address" value="...(00w 00th Street New York, NY 00000)">
             </div>
-            <button type="submit" class="btn"> Submit</button>
+
           </form>
 
         </div>
@@ -62,19 +62,30 @@
                </label>
              </div>
             </div>
-          </form>
+          </form><br>
+          <div>  <h5>Contact Info:</h5><br>
+            <label for="contacts">Email address</label>
+            <input type="text"  id="emailAddress" size="40px">
+          </div>
 
-        </div><br><br>
+        </div>
 
 
       </div>
 
-    </div>
+<!--Submit Butoon location-->
 
+
+
+    </div>
+    <div id="submitButton" class="container">
+      <button type="submit" class="btn"> Submit</button>
+    </div>
 <!--Items for Sale-->
     <div id="itemsForSale" class="container"><hr>
+      <h4>Parts available for Purchase</h4><hr>
       <form id="itemForm">
-        <label for="itemsForSale">Select the items you want to purchase</label>
+        <label for="itemsForSale">Available stocked items includes:</label>
         <div class="form-group">
 <!--First Checkbox -->
           <div class="checkbox">
@@ -98,8 +109,12 @@
             </label>
           </div>
 
-        </div>
+        </div><hr>
       </form>
+    </div>
+    <div id="checkOut" class="container">
+      <h3>Check Out</h3>
+      <div></div>
     </div>
 
   </body>
