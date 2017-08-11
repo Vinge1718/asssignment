@@ -15,4 +15,14 @@ $(document).ready(function(){
     event.preventDefault();
     $("#customerDetails").show();
   });
+
+  $("button#checkOutButton").click(function(event){
+    var selected = [];
+    $("input:checkbox[name=itemsForSale]:checked").each(function(){
+      selected.push($(this).val());
+    });
+
+    event.preventDefault();
+    $("#customerItems").show();
+  });
 });
