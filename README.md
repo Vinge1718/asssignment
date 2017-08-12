@@ -12,3 +12,6 @@ Websites' ability to print display back to the user:
 
 ## set up
 The site can be accessed [here](https://vinge1718.github.io/asssignment/)
+
+## Known Problems
+It will not add the numeric value of the items selected but will only display their strings
