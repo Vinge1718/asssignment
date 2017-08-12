@@ -82,58 +82,64 @@
     </div>
 <!--Items for Sale-->
     <div id="itemsForSale" class="container"><hr>
-      <h4>Parts available for Purchase</h4><hr>
-      <form id="itemForm">
-        <label for="itemsForSale">Available stocked items includes:</label>
-        <div class="form-group">
-<!--First Checkbox -->
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="itemsForSale" value="Vehicle Service Parts (filters and consumables)" id="5000">
-                filters and consumables.
-            </label><br><label >Ksh. 5000</label>
-          </div>
-<!--second checkbox-->
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="itemsForSale" value="Electronic Repair Parts (control-modules, comm-lines)" id="50000">
-                Communication lines, Control Modules.
-            </label><br><label >Ksh. 50000</label>
-          </div>
-<!--Third checkbox-->
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="itemsForSale" value="Mechanical Repair Parts (suspension parts and bushes)" id="10000">
-                Suspension parts, mountings and Bushes.
-            </label><br><label >Ksh. 10000</label>
-          </div>
-<!--Fourth Item-->
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="itemsForSale" value="Accessories" id="5000">
-                Accessories.
-            </label><br><label >Ksh. 5000</label>
-          </div>
-<!--Fifth Item-->
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" name="itemsForSale" value="Towing services" id="2000">
-                Towing services.
-            </label><br><label >Ksh. 2000</label>
+        <h4>Parts available for Purchase</h4><hr>
+      <div class="row">
+        <div class="col-md-6">
 
 
+          <form id="itemForm">
+            <label for="itemsForSale">Available stocked items includes:</label>
+            <div class="form-group">
+    <!--First Checkbox -->
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="itemsForSale" value="Vehicle Service Parts (filters and consumables)" id="5000">
+                    filters and consumables.
+                </label><br><label >Ksh. 5000</label>
+              </div>
+    <!--second checkbox-->
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="itemsForSale" value="Electronic Repair Parts (control-modules, comm-lines)" id="50000">
+                    Communication lines, Control Modules.
+                </label><br><label >Ksh. 50000</label>
+              </div>
+    <!--Third checkbox-->
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="itemsForSale" value="Mechanical Repair Parts (suspension parts and bushes)" id="10000">
+                    Suspension parts, mountings and Bushes.
+                </label><br><label >Ksh. 10000</label>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+    <!--Fourth Item-->
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="itemsForSale" value="Accessories" id="5000">
+                    Accessories.
+                </label><br><label >Ksh. 5000</label>
+              </div>
+    <!--Fifth Item-->
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="itemsForSale" value="Towing services" id="2000">
+                    Towing services.
+                </label><br><label >Ksh. 2000</label>
+
+
+              </div>
+            </div>
+
           </div>
-
-          <button type="submit" class="btn" id="checkOutButton"> Check Out</button>
-        </div><hr>
-
-      </form>
-
+          <button type="submit" class="btn" id="checkOutButton"> Check Out</button><hr>
+        </form>
+      </div>
     </div>
 
 <!--Output field-->
     <div id="checkOutDisplay" class="container" class="row">
-
       <div class="col-md-6" id="customerDetails">
         <h5>Shipping Information Details</h5> <br>
         <ul id="detailsList">
